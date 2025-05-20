@@ -40,7 +40,7 @@ An AI-powered Inventory Management System designed for small and medium clothing
 1. Admin adds inventory manually via dashboard or chatbot.
 2. Billing system is used during sales — deducts stock automatically.
 3. Sales data is logged and visualized on analytics page.
-4. Forecasting model predicts future demand.
+4. Forecasting model predicts future sales.
    
 ---
 
