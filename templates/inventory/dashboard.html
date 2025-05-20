@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class = "content-section">
+    <div class = "row mx-auto justify-content-center">
+        <div class = "card m-4" style = "width : 90%;">
+            <div class = "card-body">
+                <div id = "chart1">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<div id="chart1"></div> 
+<div id = "chart2"></div>
+<div id = "chart3"></div>
+<script type="text/javascript">
+    var graph1 = {{ sales_graph | safe }}; 
+    var graph2 = {{ best_graph | safe }}; 
+    var graph3 = {{ remaining_graph | safe }}; 
+    
+    Plotly.newPlot("chart2", graph2, {}); 
+    Plotly.newPlot("chart3", graph3, {}); 
+
+</script>
+{% endblock content %}
